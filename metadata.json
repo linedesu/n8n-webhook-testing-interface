@@ -1,0 +1,5 @@
+{
+  "name": "n8n Webhook Testing Interface",
+  "description": "A simple testing tool to debug and test n8n webhook endpoints by simulating various HTTP requests and displaying both request inputs and response outputs clearly.",
+  "requestFramePermissions": []
+}

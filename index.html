@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>n8n Webhook Testing Interface</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              mono: ['"Fira Code"', 'Menlo', 'Monaco', 'Consolas', '"Liberation Mono"', '"Courier New"', 'monospace'],
+            },
+            colors: {
+              'hacker-dark': '#0D1117',
+              'hacker-dark-panel': '#161B22',
+              'hacker-green': '#33FF99',
+              'hacker-accent': '#00BFFF',
+              'hacker-subtle': '#30363D',
+              'hacker-pink': '#F72585',
+              'hacker-blue': '#4CC9F0',
+              'hacker-yellow': '#F4D35E',
+            },
+            boxShadow: {
+              'glow-green': '0 0 5px rgba(51, 255, 153, 0.5)',
+              'glow-accent': '0 0 8px rgba(0, 191, 255, 0.6)',
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+      body {
+        text-shadow: 0 0 2px rgba(51, 255, 153, 0.2);
+      }
+      ::selection {
+        background: #F72585; /* hacker-pink */
+        color: #0D1117; /* hacker-dark */
+        text-shadow: none;
+      }
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #161B22; /* hacker-dark-panel */
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #30363D; /* hacker-subtle */
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #00BFFF; /* hacker-accent */
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-hacker-dark text-hacker-green font-mono">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
